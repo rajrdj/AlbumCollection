@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  box-shadow:  2px 0px 5px rgb(0, 0, 0);
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(to bottom, #060707, #000000);
+}
+.logo-link{
+  text-decoration:underline overline ;
+  color:rgb(121, 158, 19);
+  cursor: pointer;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
