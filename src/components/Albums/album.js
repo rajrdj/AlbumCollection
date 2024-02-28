@@ -3,6 +3,36 @@ import "./album.css"
 import {useState } from 'react';
 import {Link} from 'react-router-dom';
 
+
+const Album1 = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  
+  useEffect(() => {
+    // Simulate loading delay
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div>
+      {isLoading ? (
+        // Display loading indicator while isLoading is true
+        <img src="/loading.gif" alt="Loading" />
+      ) : (
+        // Display album content when isLoading is false
+        <div>
+          <h1>Albums Loaded Successfully</h1>
+          {/* Add your album content here */}
+        </div>
+      )}
+    </div>
+  );
+};
+
 const Album = ({albums,deleteAlbum,addAlbum}) => {
   const [title,setTitle] = useState('');
 

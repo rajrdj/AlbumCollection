@@ -3,15 +3,21 @@
   height: 50px;
   align-items: center;
   justify-content: center;
-  box-shadow:  2px 0px 5px rgb(0, 0, 0);
+  box-shadow: 2px 0px 5px var(--text-700);
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(to bottom, #060707, #000000);
+  background-color: rgb(229, 140, 229)
 }
-.logo-link{
-  text-decoration:underline overline ;
-  color:rgb(121, 158, 19);
+
+.logo-link {
+  text-decoration:underline black;
+  font-family: "Courier New", Courier, monospace;
+  background: linear-gradient(hsl(338, 70%, 48%), hsl(139, 69%, 39%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: "Courier New", Courier, monospace;
   cursor: pointer;
   font-size: 25px;
-  font-family: "Times New Roman", Times, serif;
+  
 }
